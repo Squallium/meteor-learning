@@ -7,4 +7,11 @@ I'm talking about my latest discoveries from the world of JavaScript.
     {{{exampleHelper}}}
 
     {{exampleHelperSafe}}
+
+    {{> contextExample dataContextHelper}}
+
+    {{#with dataContextHelper}}
+        {{> contextExample}}
+    {{/with}}
+
 </template>
