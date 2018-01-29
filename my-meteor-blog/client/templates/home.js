@@ -4,6 +4,7 @@ Template.home.created = function () {
 
 Template.home.rendered = function () {
     console.log('Rendered the home template');
+    this.find('p').innerHTML = 'We just replaced that text!';
 };
 
 Template.home.destroyed = function () {
