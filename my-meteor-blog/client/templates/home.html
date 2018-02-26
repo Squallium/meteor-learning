@@ -4,14 +4,7 @@
 I'm talking about my latest discoveries from the world of JavaScript.
     {{/markdown}}
 
-    {{{exampleHelper}}}
-
-    {{exampleHelperSafe}}
-
-    {{> contextExample dataContextHelper}}
-
-    {{#with dataContextHelper}}
-        {{> contextExample}}
-    {{/with}}
-
+    {{#each postsList}}
+        {{> postInList}}
+    {{/each}}
 </template>
